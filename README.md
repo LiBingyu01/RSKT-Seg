@@ -67,7 +67,7 @@ And you can put it in the ```./pretrain``` and modify the ```RSKT_Seg\third_part
 to the path to the pretrain.
 
 ### Prepare DINO ViT encoder pretrained file
-- Download *open-sourced* DINO
+- Download *open-sourced* [DINO](https://drive.google.com/file/d/1kH0wDM_Hl4sEQJG8JjILCo0RTx65X7zV/view)
 - Put it into the ```./pretrain```, and change the ```DINO_WEIGHTS``` in ```./configs```.
 
 ### Prepare RemoteCLIP ViT encoder pretrained file
@@ -82,3 +82,12 @@ to the path to the pretrain.
 - Using the ```KEY_vis.sh``` for Visualization
 
 - For the Cost Map Visualization please use ```RSKT_Seg\visualize_corr.py```.
+
+## Acknowledgement
+We sincerely appreciate the invaluable contributions of numerous open-source projects and datasets that have supported our work, including but not limited to [DETECTRON2](https://github.com/facebookresearch/detectron2), [CAT-SEG](https://github.com/cvlab-kaist/CAT-Seg), [SAMRS](https://github.com/ViTAE-Transformer/SAMRS), [GSNET]([https://open-earth-map.org/), [LoveDA](https://github.com/Junjue-Wang/LoveDA](https://github.com/yecy749/GSNet?tab=readme-ov-file)), [GSNET]([https://open-earth-map.org/), [OVRS](https://github.com/caoql98/OVRS))
+
+## Star History
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=LiBingyu01/RSKT-Seg&type=Date)](https://www.star-history.com/#LiBingyu01/RSKT-Seg&Date)
