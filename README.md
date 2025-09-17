@@ -1,4 +1,4 @@
-# Efficient Open-Vocabulary Remote Sensing Image Segmentation with Domain Adaptation
+# Exploring Efficient Open-Vocabulary Segmentation in the Remote Sensing
 
 ## Introduction
 Open-Vocabulary Remote Sensing Image Segmentation (OVRSIS), an emerging task that adapts Open-Vocabulary Segmentation (OVS) to the remote sensing (RS) domain, remains underexplored due to the absence of a unified evaluation benchmark and the domain gap between natural and RS images.
