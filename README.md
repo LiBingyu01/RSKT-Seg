@@ -91,7 +91,7 @@ to the path to the pretrain.
 - For the Cost Map Visualization please use ```RSKT_Seg\visualize_corr.py```.
 
 ## Acknowledgement
-We sincerely appreciate the invaluable contributions of numerous open-source projects and datasets that have supported our work, including but not limited to [DETECTRON2](https://github.com/facebookresearch/detectron2), [CAT-SEG](https://github.com/cvlab-kaist/CAT-Seg), [SAMRS](https://github.com/ViTAE-Transformer/SAMRS), [GSNET]([https://open-earth-map.org/), [LoveDA](https://github.com/Junjue-Wang/LoveDA](https://github.com/yecy749/GSNet?tab=readme-ov-file)), [GSNET]([https://open-earth-map.org/), [OVRS](https://github.com/caoql98/OVRS))
+We sincerely appreciate the invaluable contributions of numerous open-source projects and datasets that have supported our work, including but not limited to [DETECTRON2](https://github.com/facebookresearch/detectron2), [CAT-SEG](https://github.com/cvlab-kaist/CAT-Seg), [SAMRS](https://github.com/ViTAE-Transformer/SAMRS), [GSNET](https://github.com/yecy749/GSNet), [LoveDA](https://github.com/Junjue-Wang/LoveDA](https://github.com/yecy749/GSNet?tab=readme-ov-file)), [OVRS](https://github.com/caoql98/OVRS))
 
 ## Star History
 
