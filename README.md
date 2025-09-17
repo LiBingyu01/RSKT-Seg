@@ -95,6 +95,4 @@ We sincerely appreciate the invaluable contributions of numerous open-source pro
 
 ## Star History
 
-## Star History
-
 [![Star History Chart](https://api.star-history.com/svg?repos=LiBingyu01/RSKT-Seg&type=Date)](https://www.star-history.com/#LiBingyu01/RSKT-Seg&Date)
