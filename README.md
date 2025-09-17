@@ -2,7 +2,7 @@
 
 > **Note**  
 > The author sincerely invites you to contribute to this repository so that we can further improve our open-source work together.  
-> If you encounter any questions, please feel free to open an issue on GitHub or contact me directly via email at [my email](mailto:libingyu0205@mail.ustc.edu.cn)(libingyu0205@mail.ustc.edu.cn).
+> If you encounter any questions, please feel free to open an issue on GitHub or contact me directly via email at [my email](mailto:libingyu0205@mail.ustc.edu.cn)       (libingyu0205@mail.ustc.edu.cn).
 
 
 [paper](https://arxiv.org/pdf/2509.12040.pdf)
