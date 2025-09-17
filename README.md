@@ -1,5 +1,7 @@
 # Exploring Efficient Open-Vocabulary Segmentation in the Remote Sensing
 
+[paper](https://arxiv.org/pdf/2509.12040.pdf)            [Open-soured Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC)
+
 > **Note**  
 > The author sincerely invites you to contribute to this repository so that we can further improve our open-source work together.  
 > If you encounter any questions, please feel free to open an issue on GitHub or contact me directly via email at [my email](mailto:libingyu0205@mail.ustc.edu.cn)       (libingyu0205@mail.ustc.edu.cn).
@@ -11,10 +13,6 @@
 - [ ] release the trained weight.
 - [ ] submit the open-sourced dataset in huggingface. (already in Baidu Netdisk [OVSISBench](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) )
 
-
-[paper](https://arxiv.org/pdf/2509.12040.pdf)
-
-[Open-soured Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC)
 ## Introduction
 Open-Vocabulary Remote Sensing Image Segmentation (OVRSIS), an emerging task that adapts Open-Vocabulary Segmentation (OVS) to the remote sensing (RS) domain, remains underexplored due to the absence of a unified evaluation benchmark and the domain gap between natural and RS images.
 To bridge these gaps, we first establish a standardized OVRSIS benchmark (**OVRSISBench**) based on widely-used RS segmentation datasets, enabling consistent evaluation across methods. Using this benchmark, we comprehensively evaluate several representative OVS/OVRSIS models and reveal their limitations when directly applied to remote sensing scenarios.
