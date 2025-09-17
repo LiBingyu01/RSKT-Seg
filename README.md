@@ -1,6 +1,6 @@
 # Exploring Efficient Open-Vocabulary Segmentation in the Remote Sensing
 
-[paper](https://arxiv.org/pdf/2509.12040.pdf)            [Open-soured Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC)
+[Paper](https://arxiv.org/pdf/2509.12040.pdf) <span style="display:inline-block; width:50px;"></span> [Open-sourced Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC)
 
 > **Note**  
 > The author sincerely invites you to contribute to this repository so that we can further improve our open-source work together.  
