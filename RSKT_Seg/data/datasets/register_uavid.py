@@ -2,20 +2,22 @@ import os
 from detectron2.data import DatasetCatalog, MetadataCatalog
 from detectron2.data.datasets import load_sem_seg
 
-Vaihingen_CATEGORIES = [
-    {"color": [255, 255, 255], "id": 1, "name": "Impervious surfaces"},
-    {"color": [0, 0, 255], "id": 2, "name": "Building"},
-    {"color": [0, 255, 255], "id": 3, "name": "Low vegetation"},
-    {"color": [0, 255, 0], "id": 4, "name": "Tree"},
-    {"color": [255, 255, 0], "id": 5, "name": "Car"},
-    {"color": [255, 0, 0], "id": 6, "name": "Clutter/background"},
+uavid_CATEGORIES = [
+    {"color": [0, 0, 0], "id": 1, "name": "Background clutter"},
+    {"color": [128, 0, 0], "id": 2, "name": "Building"},
+    {"color": [128,64,128], "id": 3, "name": "Road"},
+    {"color": [0,128,0], "id": 4, "name": "Tree"},
+    {"color": [128,128,0], "id": 5, "name": "Low vegetation"},
+    {"color": [64,0,128], "id": 6, "name": "Moving car"},
+    {"color": [192,0,192], "id": 7, "name": "Static car"},
+    {"color": [64,64,0], "id": 8, "name": "Human"}
 ]
 
-def _get_Vaihingen_meta():
-    stuff_ids = [k["id"] for k in Vaihingen_CATEGORIES]
+def _get_uavid_meta():
+    stuff_ids = [k["id"] for k in uavid_CATEGORIES]
     stuff_dataset_id_to_contiguous_id = {k: i for i, k in enumerate(stuff_ids)}
-    stuff_classes = [k["name"] for k in Vaihingen_CATEGORIES]
-    stuff_colors = [k["color"] for k in Vaihingen_CATEGORIES]
+    stuff_classes = [k["name"] for k in uavid_CATEGORIES]
+    stuff_colors = [k["color"] for k in uavid_CATEGORIES]
 
     ret = {
         "stuff_dataset_id_to_contiguous_id": stuff_dataset_id_to_contiguous_id,
@@ -24,14 +26,14 @@ def _get_Vaihingen_meta():
     }
     return ret
 
-def register_Vaihingen(root):
-    meta = _get_Vaihingen_meta()
+def register_uavid(root):
+    meta = _get_uavid_meta()
     for name, image_dirname, sem_seg_dirname in [
-        ("all", "Vaihingen/imgs", "Vaihingen/D2masks"),
+        ("all", "uavid/Images", "uavid/Labels"),
     ]:
         image_dir = os.path.join(root, image_dirname)
         gt_dir = os.path.join(root, sem_seg_dirname)
-        name = f"Vaihingen_{name}_sem_seg"
+        name = f"uavid_{name}_sem_seg"
         DatasetCatalog.register(
             name, lambda x=image_dir, y=gt_dir: load_sem_seg(y, x, gt_ext="png", image_ext="png")
         )
@@ -44,4 +46,4 @@ def register_Vaihingen(root):
         )
 
 root = "datasets"
-register_Vaihingen(root)
+register_uavid(root)

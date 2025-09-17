@@ -56,5 +56,5 @@ def register_DLRSD(root):
             **meta,
         )
 
-root = os.getenv("DETECTRON2_DATASETS", "datasets")
+root = "datasets"  # 替换为DLRSD数据集的根目录
 register_DLRSD(root)

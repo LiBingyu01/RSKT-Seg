@@ -55,5 +55,5 @@ def register_iSAID(root):
             **meta,
         )
 
-root = os.getenv("DETECTRON2_DATASETS", "datasets")
+root = "datasets"
 register_iSAID(root)

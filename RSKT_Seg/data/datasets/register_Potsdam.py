@@ -43,5 +43,5 @@ def register_Potsdam(root):
             **meta,
         )
 
-root = os.getenv("DETECTRON2_DATASETS", "datasets")
+root = "datasets"
 register_Potsdam(root)
