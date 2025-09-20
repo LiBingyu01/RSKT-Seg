@@ -1,10 +1,10 @@
 _BASE_: config.yaml
 MODEL:
-  META_ARCHITECTURE: "RSDA_Seg"
+  META_ARCHITECTURE: "RSKT_Seg"
   PIXEL_MEAN: [123.675, 116.280, 103.530]
   PIXEL_STD: [58.395, 57.120, 57.375]
   SEM_SEG_HEAD:
-    NAME: "RSDA_Seg_Head"
+    NAME: "RSKT_Seg_Head"
     IN_FEATURES: ["res2", "res3", "res4"]
     IGNORE_VALUE: 255
     NUM_CLASSES: 15
@@ -22,13 +22,13 @@ MODEL:
     DECODER_GUIDANCE_PROJ_DIMS: [32, 16]
     USE_CLIP_CORR: True 
     USE_DINO_CORR: True 
-    FUSION_TYPE: "query_guided" 
+    FUSION_TYPE: "simple_separate"  # simple_separate simple_mean simple_concatenation
     DECODER_CLIP_GUIDANCE_DIMS: [256,128] 
     DECODER_CLIP_GUIDANCE_PROJ_DIMS: [32,16] 
     DECODER_DINO_GUIDANCE_DIMS: [256,128] 
     DECODER_DINO_GUIDANCE_PROJ_DIMS: [32,16] 
-    NUM_LAYERS: 2
-    USE_EFFICIENT: False
+    NUM_LAYERS: 3
+    USE_EFFICIENT: True
     NUM_HEADS: 4
     HIDDEN_DIMS: 128
     POOLING_SIZES: [2, 2]
@@ -42,11 +42,11 @@ MODEL:
     USE_REMOTE_CLIP: True
     CLIP_REMOTE_FINETUNE: "frozen"
     CLIP_PRETRAINED_REMOTE: "ViT-B/32"       
-    CLIP_PRETRAINED_WEIGHTS_REMOTE: "./pretrained/RemoteCLIP-ViT-B-32.pt"
+    CLIP_PRETRAINED_WEIGHTS_REMOTE: "pretrained/RemoteCLIP-ViT-B-32.pt"
     # dino
     USE_REMOTE_DINO: True
     DINO_FINETUNE: "frozen"
-    DINO_WEIGHTS: "./pretrained/DINO_WEIGHTS.pth"
+    DINO_WEIGHTS: "pretrained/RSIB.pth"
   PROMPT_ENSEMBLE_TYPE: "single"
 INPUT:
   MIN_SIZE_TRAIN: (384, )
@@ -63,7 +63,7 @@ DATASETS:
   TRAIN: ("iSAID_train_sem_seg",)
   TEST: ("iSAID_val_sem_seg",)
 SOLVER:
-  IMS_PER_BATCH: 4 
+  IMS_PER_BATCH: 8 
   LR_SCHEDULER_NAME: WarmupCosineLR
   BASE_LR: 0.0002
   MAX_ITER: 30000
