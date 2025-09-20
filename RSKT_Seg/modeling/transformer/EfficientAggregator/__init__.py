@@ -1,1 +1,1 @@
-from .model_aggregator import AggregatorLayer
+from .model_aggregator import EffAggregatorLayer

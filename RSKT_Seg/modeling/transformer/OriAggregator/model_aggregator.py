@@ -1,3 +1,8 @@
+# --------------------------------------------------------
+# CAT-Seg: Cost Aggregation for Open-vocabulary Semantic Segmentation
+# Licensed under The MIT License [see LICENSE for details]
+# Written by Seokju Cho and Heeseong Shin
+# --------------------------------------------------------
 
 import torch
 import torch.nn as nn
@@ -5,7 +10,7 @@ import torch.nn.functional as F
 from .model_agg_class import ClassTransformerLayer
 from .model_agg_spatial import SwinTransformerBlockWrapper
 
-class AggregatorLayer(nn.Module):
+class OriAggregatorLayer(nn.Module):
     def __init__(self, hidden_dim=64, text_guidance_dim=512, appearance_guidance=512, nheads=4, input_resolution=(20, 20), pooling_size=(5, 5), window_size=(10, 10), attention_type='linear', pad_len=256) -> None:
         super().__init__()
         self.swin_block = SwinTransformerBlockWrapper(hidden_dim, appearance_guidance, input_resolution, nheads, window_size)

@@ -6,8 +6,8 @@ from einops import rearrange, repeat
 from einops.layers.torch import Rearrange
 
 from timm.layers import PatchEmbed, Mlp, DropPath, to_2tuple, to_ntuple, trunc_normal_, _assert
-from .EfficientAggregator import AggregatorLayer
-from .OriAggregator import AggregatorLayer
+from .EfficientAggregator import EffAggregatorLayer
+from .OriAggregator import OriAggregatorLayer
 from .RSKT_Upsample import RSKT_Upsample
 from .visualize_corr import visualize_corr
 class RSKT_Decoder(nn.Module):
@@ -51,13 +51,13 @@ class RSKT_Decoder(nn.Module):
         self.use_rotate = use_rotate
         if use_efficient:
             self.layers = nn.ModuleList([
-                AggregatorLayer(
+                EffAggregatorLayer(
                     hidden_dim=hidden_dim
                 ) for _ in range(num_layers)
             ])
         else:
             self.layers = nn.ModuleList([
-                AggregatorLayer(
+                OriAggregatorLayer(
                     hidden_dim=hidden_dim, text_guidance_dim=text_guidance_proj_dim, appearance_guidance=appearance_guidance_proj_dim, 
                     nheads=nheads, input_resolution=feature_resolution, pooling_size=pooling_size, window_size=window_size, attention_type=attention_type, pad_len=pad_len,
                 ) for _ in range(num_layers)
@@ -101,7 +101,7 @@ class RSKT_Decoder(nn.Module):
                 self.conv1 = nn.Conv2d(prompt_channel*5, hidden_dim, kernel_size=7, stride=1, padding=3)
             elif fusion_type=='simple_mean':
                 self.conv1 = nn.Conv2d(prompt_channel, hidden_dim, kernel_size=7, stride=1, padding=3)
-            elif fusion_type=='simple_separate':
+            elif fusion_type=='simple_separate':    
                 self.conv2 = nn.Conv2d(prompt_channel, hidden_dim, kernel_size=7, stride=1, padding=3)
                 self.fusion_corr = nn.Conv2d(2*hidden_dim, hidden_dim, kernel_size=7, stride=1, padding=3) 
             # decoder
@@ -170,8 +170,8 @@ class RSKT_Decoder(nn.Module):
         clip_corr = rearrange(clip_corr, 'B P T H W -> (B T) P H W')
         dino_corr = rearrange(dino_corr, 'B P T H W -> (B T) P H W')
 
-        visualize_corr(clip_corr.permute(1,0,2,3)[0].unsqueeze(0), files_name[0], save_prefix='./vis_cost_clip_DLRSD/')
-        visualize_corr(dino_corr.permute(1,0,2,3), files_name[0], save_prefix='./vis_cost_dino_DLRSD/')
+        # visualize_corr(clip_corr.permute(1,0,2,3)[0].unsqueeze(0), files_name[0], save_prefix='./vis_cost_clip_DLRSD/')
+        # visualize_corr(dino_corr.permute(1,0,2,3), files_name[0], save_prefix='./vis_cost_dino_DLRSD/')
 
         clip_embed_corr = self.conv1(clip_corr)
         dino_embed_corr = self.conv2(dino_corr)
@@ -231,7 +231,7 @@ class RSKT_Decoder(nn.Module):
         """
         Arguments:
             img_feats: (B, C, H, W)
-            text_feats: (B, T, P, C) T是类别的个数
+            text_feats: (B, T, P, C) T is class number
             apperance_guidance: tuple of (B, C, H, W)
         """
         classes = None
@@ -259,10 +259,12 @@ class RSKT_Decoder(nn.Module):
                     corr = self.correlation(img_feats, text_feats)
                 dino_corr = self.correlation(dino_feat,text_feats)
                 fused_corr_embed = self.simple_mean_corr(corr,dino_corr)
+                
         elif dino_feat is not None and img_feats is None:
             corr = self.correlation(dino_feat,text_feats)
             embed_corr = self.corr_embed(corr)
             fused_corr_embed = embed_corr
+            print(f"2222222222222")
         elif dino_feat is None and img_feats is not None:
             if isinstance(img_feats, list):
                 corr = self.correlation_rotate(img_feats, text_feats)
@@ -270,6 +272,7 @@ class RSKT_Decoder(nn.Module):
                 corr = self.correlation(img_feats,text_feats)
             embed_corr = self.corr_embed(corr)
             fused_corr_embed = embed_corr
+            print(f"3333333333333333")
 
         projected_guidance, projected_text_guidance = None, None
         CLIP_projected_decoder_guidance = [None, None]

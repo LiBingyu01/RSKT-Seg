@@ -13,7 +13,7 @@ from detectron2.layers import Conv2d, ShapeSpec, get_norm
 from detectron2.modeling import SEM_SEG_HEADS_REGISTRY
 
 
-from ..transformer import RSKT_Seg_Predictor
+from ..transformer.RSKT_Seg_Predictor import RSKT_Seg_Predictor
 
 
 @SEM_SEG_HEADS_REGISTRY.register()

@@ -8,7 +8,7 @@ from .model_agg_spatial import SptialFusionBlock
 from .model_agg_class import ClassFusionBlock
 
   
-class AggregatorLayer(nn.Module):
+class EffAggregatorLayer(nn.Module):
     def __init__(self, hidden_dim, num_heads=8, drop_path=0., sr_ratio=2):
         super().__init__()
         self.spatial_fusion = SptialFusionBlock(hidden_dim, num_heads, drop_path=drop_path, sr_ratio=sr_ratio)
