@@ -1,7 +1,6 @@
 # Exploring Efficient Open-Vocabulary Segmentation in the Remote Sensing
 
-[Paper](https://arxiv.org/pdf/2509.12040.pdf) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC)
-
+[Paper](https://arxiv.org/pdf/2509.12040.pdf) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight](https://pan.baidu.com/s/1xX6TBLAn3Xypsq-IZI3azw?pwd=USTC) 
 > **Note**  
 > The author sincerely invites you to contribute to this repository so that we can further improve our open-source work together.  
 > If you **encounter any questions or find our any errors**, please feel free to open an issue on GitHub or contact me directly via email at [my email](mailto:libingyu0205@mail.ustc.edu.cn)       (libingyu0205@mail.ustc.edu.cn).
@@ -90,7 +89,7 @@ to the path to the pretrain.
 
 ### Prepare RSKT-Seg pretrained file
 
-Download the pre-trained weights of our RSKT-Seg. The weights for DLRSD+ViT-L were lost, so we re-trained a new set of weights, which have better open-vocabulary performance than the previous ones.
+Download the pre-trained weights of our [RSKT-Seg](https://pan.baidu.com/s/1xX6TBLAn3Xypsq-IZI3azw?pwd=USTC). The weights for DLRSD+ViT-L were lost, so we re-trained a new set of weights, which have better open-vocabulary performance than the previous ones.
 | Method | Backbone | Type   | DLRSD          | iSAID          | LoveDA         | Potsdam        | UAVid          | UDD5           | Vaihingen      | VDD            | Mean of All Datasets |
 |--------|----------|--------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|-----------------------|
 | RSKT   | ViT-L    | OVRSIS | 91.58 / 95.41  | 56.88 / 74.48  | 31.43 / 55.23  | 37.14 / 53.75  | 23.88 / 38.75  | 45.73 / 59.40  | 42.29 / 63.03  | 40.55 / 58.75  | 46.18 / 62.35        |
