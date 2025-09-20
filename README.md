@@ -39,7 +39,7 @@ Extensive experiments on the benchmark show that RSKT-Seg consistently outperfor
 | SED | 8.60 | 180.76 | 89.59 |
 | Cat-Seg | 9.60 | **154.29** | 127.55 |
 | OVRS | 18.53 | 154.32 | 127.57 |
-| RSKT-Seg | **7.96** | 196.15 | **29.89** | 
+| RSKT-Seg | **7.96** | 296.15 | **29.89** | 
 
 ## Prepare *open-sourced* datasets
 We have expanded the existing dataset from before to form a more comprehensive dataset evaluation.
@@ -88,13 +88,34 @@ to the path to the pretrain.
 
 - Put it into the ```./pretrain```, and change the ```CLIP_PRETRAINED_WEIGHTS_REMOTE``` in ```./configs```.
 
-## Training and Evaluation
-- Using the ```KEY.sh``` for Training and Evaluation
+### Prepare RSKT-Seg pretrained file
 
+Download the pre-trained weights of our RSKT-Seg. The weights for DLRSD+ViT-L were lost, so we re-trained a new set of weights, which have better open-vocabulary performance than the previous ones.
+| Method | Backbone | Type   | DLRSD          | iSAID          | LoveDA         | Potsdam        | UAVid          | UDD5           | Vaihingen      | VDD            | Mean of All Datasets |
+|--------|----------|--------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|-----------------------|
+| RSKT   | ViT-L    | OVRSIS | 91.58 / 95.41  | 56.88 / 74.48  | 31.43 / 55.23  | 37.14 / 53.75  | 23.88 / 38.75  | 45.73 / 59.40  | 42.29 / 63.03  | 40.55 / 58.75  | 46.18 / 62.35        |
+
+## Training and Evaluation
+After you prepare all the datasets and pretrained files:
+
+- Using the ```KEY_run.sh``` for Training and Evaluation
+- Using the ```KEY_reproduce.sh``` to reproduce our results
+  
 ## Visualization
 - Using the ```KEY_vis.sh``` for Visualization
 
 - For the Cost Map Visualization please use ```RSKT_Seg\visualize_corr.py```.
+
+
+## Cite our paper
+```
+@article{li2025exploring,
+  title={Exploring Efficient Open-Vocabulary Segmentation in the Remote Sensing},
+  author={Li, Bingyu and Dong, Haocheng and Zhang, Da and Zhao, Zhiyuan and Gao, Junyu and Li, Xuelong},
+  journal={arXiv preprint arXiv:2509.12040},
+  year={2025}
+}
+```
 
 ## Acknowledgement
 We sincerely appreciate the invaluable contributions of numerous open-source projects and datasets that have supported our work, including but not limited to [DETECTRON2](https://github.com/facebookresearch/detectron2), [CAT-SEG](https://github.com/cvlab-kaist/CAT-Seg), [SAMRS](https://github.com/ViTAE-Transformer/SAMRS), [GSNET](https://github.com/yecy749/GSNet), [LoveDA](https://github.com/Junjue-Wang/LoveDA](https://github.com/yecy749/GSNet?tab=readme-ov-file)), [OVRS](https://github.com/caoql98/OVRS))

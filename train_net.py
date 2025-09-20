@@ -78,7 +78,7 @@ from RSKT_Seg import (
     MaskFormerPanopticDatasetMapper,
     MaskFormerSemanticDatasetMapper,
     SemanticSegmentorWithTTA,
-    add_rskt_seg_config,
+    add_RSKT_seg_config,
 )
 
 
@@ -283,7 +283,7 @@ def setup(args):
     cfg = get_cfg()
     # for poly lr schedule
     add_deeplab_config(cfg)
-    add_rskt_seg_config(cfg)
+    add_RSKT_seg_config(cfg)
     cfg.merge_from_file(args.config_file)
     cfg.merge_from_list(args.opts)
     cfg.freeze()
