@@ -16,7 +16,6 @@ from detectron2.utils.memory import _ignore_torch_cuda_oom
 from einops import rearrange
 from .vision_transformer import vit_base
 import os
-from .visulize_kmeans import kmeans_cluster_and_fuse
 from .visualize_corr import visualize_corr
 
 def BuildRSIB(Weights):
@@ -250,8 +249,6 @@ class RSKT_Seg(nn.Module):
         if self.training:
             # images_shape: 384*384
             images = [x["image"].to(self.device) for x in batched_inputs]
-            # print(batched_inputs)
-            # print(ss)
             clip_images = [(x - self.clip_pixel_mean) / self.clip_pixel_std for x in images]
             clip_images = ImageList.from_tensors(clip_images, self.size_divisibility)
             self.layers = []
@@ -357,8 +354,6 @@ class RSKT_Seg(nn.Module):
             clip_features_guidance_remote = None
 
         files_name = [x["file_name"] for x in batched_inputs]
-        print(files_name)
-
         outputs = self.sem_seg_head(files_name,
         clip_features_input, 
         dino_feat_input, 
@@ -366,7 +361,9 @@ class RSKT_Seg(nn.Module):
         clip_features_guidance_remote,
         dino_feat_guidance)
         
-        visualize_corr(outputs, files_name[0], save_prefix='./vis_cost_out_DLRSD/')
+        # if you want to visualize the corr map
+        # visualize_corr(outputs, files_name[0], save_prefix='./vis_cost_out_DLRSD/')
+
         if self.training:
             targets = torch.stack([x["sem_seg"].to(self.device) for x in batched_inputs], dim=0)
             outputs = F.interpolate(outputs, size=(targets.shape[-2], targets.shape[-1]), mode="bilinear", align_corners=False)

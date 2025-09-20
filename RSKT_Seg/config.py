@@ -3,7 +3,7 @@
 from detectron2.config import CfgNode as CN
 
 
-def add_rskt_seg_config(cfg):
+def add_RSKT_seg_config(cfg):
     """
     Add config for MASK_FORMER.
     """

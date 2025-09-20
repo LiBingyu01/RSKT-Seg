@@ -8,7 +8,6 @@ import os
 def visualize_corr(corr_1, files_name, save_prefix='./output_vis_cost/'):
     file_name = os.path.basename(files_name)
     file_base_name = os.path.splitext(file_name)[0]
-    print("file_base_name:", file_base_name)
 
     cv2_img = Image.open(files_name)
     cv2_img = cv2.cvtColor(np.array(cv2_img), cv2.COLOR_RGB2BGR)
