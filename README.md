@@ -7,9 +7,9 @@
 
 ## 🚀 Updates​
 - [x] 2025/9/12: init repository.
-
+- [x] 2025/9/18: release the trained weight.
 ## 🚩 TO DO​
-- [ ] release the trained weight.
+
 - [ ] submit the open-sourced dataset in huggingface. (already in Baidu Netdisk [OVSISBench](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) )
 
 ## Introduction
