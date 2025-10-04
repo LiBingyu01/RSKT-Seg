@@ -1,9 +1,10 @@
 # Exploring Efficient Open-Vocabulary Segmentation in the Remote Sensing
 
-[Paper](https://arxiv.org/pdf/2509.12040.pdf) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight](https://pan.baidu.com/s/1xX6TBLAn3Xypsq-IZI3azw?pwd=USTC) 
+[Paper](https://arxiv.org/pdf/2509.12040.pdf) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight](https://pan.baidu.com/s/1xX6TBLAn3Xypsq-IZI3azw?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets(google drive)](https://drive.google.com/drive/folders/13Ck4aPWjvfB7i7i1wRh5ExibHQmg-DWJ?usp=sharing) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight(google drive)](https://drive.google.com/drive/folders/1m_JGLABBvODWs6MK0Nh-pmB0vqUsShK_?usp=sharing) 
 > **Note**  
 > The author sincerely invites you to contribute to this repository so that we can further improve our open-source work together.  
 > If you **encounter any questions or find our any errors**, please feel free to open an issue on GitHub or contact me directly via email at [my email](mailto:libingyu0205@mail.ustc.edu.cn)       (libingyu0205@mail.ustc.edu.cn).
+
 
 ## 🚀 Updates​
 - [x] 2025/9/12: init repository.
