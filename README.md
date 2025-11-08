@@ -2,6 +2,7 @@
     
 # Exploring Efficient Open-Vocabulary Segmentation in the Remote Sensing
 **⭐Accepted to AAAI 2026 Oral⭐**
+
 [![Paper](https://img.shields.io/badge/ArXiv-2509.12040-red?style=flat-square)](https://arxiv.org/pdf/2509.12040.pdf) 
 
 </div>
