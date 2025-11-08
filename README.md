@@ -1,9 +1,7 @@
 # Exploring Efficient Open-Vocabulary Segmentation in the Remote Sensing
 
-<p align="center">
+
 ⭐ **AAAI 2026 Oral Presentation** ⭐  
-*Thirty-Eighth AAAI Conference on Artificial Intelligence*
-</p>
 
 
 [Paper](https://arxiv.org/pdf/2509.12040.pdf) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight](https://pan.baidu.com/s/1xX6TBLAn3Xypsq-IZI3azw?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC) 
