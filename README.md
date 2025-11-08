@@ -1,7 +1,8 @@
 # Exploring Efficient Open-Vocabulary Segmentation in the Remote Sensing
 
 <p align="center">
-✨ *Accepted as an **Oral Presentation** at the Thirty-Eighth AAAI Conference on Artificial Intelligence (AAAI 2026)* ✨
+⭐ **AAAI 2026 Oral Presentation** ⭐  
+*Thirty-Eighth AAAI Conference on Artificial Intelligence*
 </p>
 
 
