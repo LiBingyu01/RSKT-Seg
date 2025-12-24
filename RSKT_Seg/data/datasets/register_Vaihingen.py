@@ -45,3 +45,4 @@ def register_Vaihingen(root):
 
 root = "datasets"
 register_Vaihingen(root)
+
