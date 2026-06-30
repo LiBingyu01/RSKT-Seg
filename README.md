@@ -17,6 +17,7 @@
 ## 🚀 Updates​
 - [x] 2025/9/12: init repository.
 - [x] 2025/9/18: release the trained weight.
+- [x] 2026/6/30: move Pi-Seg to https://github.com/LiBingyu01/Pi-Seg, enjoy.
 ## 🚩 TO DO​
 
 - [ ] submit the open-sourced dataset in huggingface. (already in Baidu Netdisk [OVSISBench](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) )
