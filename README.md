@@ -5,7 +5,9 @@
 
 [![Paper](https://img.shields.io/badge/ArXiv-2509.12040-red?style=flat-square)](https://arxiv.org/pdf/2509.12040.pdf) 
 
-[Open-sourced Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight](https://pan.baidu.com/s/1xX6TBLAn3Xypsq-IZI3azw?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC) 
+[Open-sourced Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight](https://pan.baidu.com/s/1xX6TBLAn3Xypsq-IZI3azw?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC)
+
+</div>
 
 ## 📢 Clarification Regarding the arXiv Revision
 
@@ -17,8 +19,6 @@ These revisions are limited to the appendix and supplementary content of the ear
 
 We sincerely apologize for any confusion caused by the earlier arXiv version and greatly appreciate the community’s careful feedback, which has helped us improve the accuracy and transparency of this work.
 
-
-</div>
 
 > **Note**  
 > The author sincerely invites you to contribute to this repository so that we can further improve our open-source work together.  
