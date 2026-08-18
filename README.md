@@ -7,6 +7,17 @@
 
 [Open-sourced Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight](https://pan.baidu.com/s/1xX6TBLAn3Xypsq-IZI3azw?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC) 
 
+## 📢 Clarification Regarding the arXiv Revision
+
+We would like to clarify that several descriptions and auxiliary results included in the appendix of an earlier arXiv version of **RSKT-Seg** were not presented with sufficient clarity and may have caused misunderstanding. After carefully rechecking the manuscript, we have updated the arXiv version to correct these issues and improve the corresponding explanations.
+
+We have also carefully reviewed the parameter-counting concern raised in [Issue #24](https://github.com/LiBingyu01/RSKT-Seg/issues/24). The reported parameter statistics have been recalculated and corrected in the latest arXiv revision, and the relevant counting convention has been clarified to avoid further ambiguity.
+
+These revisions are limited to the appendix and supplementary content of the earlier arXiv manuscript. They do **not** alter the peer-reviewed AAAI 2026 paper, its main experimental results, or its conclusions. For the peer-reviewed main paper, please refer to the official AAAI 2026 version; for the corrected supplementary information, please refer to the latest arXiv version.
+
+We sincerely apologize for any confusion caused by the earlier arXiv version and greatly appreciate the community’s careful feedback, which has helped us improve the accuracy and transparency of this work.
+
+
 </div>
 
 > **Note**  
