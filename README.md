@@ -59,7 +59,7 @@ Extensive experiments on the benchmark show that RSKT-Seg consistently outperfor
 | SED | 8.60 | 180.76 | 89.59 |
 | Cat-Seg | 9.60 | **154.29** | 127.55 |
 | OVRS | 18.53 | 154.32 | 127.57 |
-| RSKT-Seg | **7.96** | 296.15 | **29.89** | 
+| RSKT-Seg | **7.96** | 334.62M | **59.89** | 
 
 ## Prepare *open-sourced* datasets
 We have expanded the existing dataset from before to form a more comprehensive dataset evaluation.
