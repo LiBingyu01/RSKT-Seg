@@ -6,7 +6,7 @@
 [![Paper](https://img.shields.io/badge/ArXiv-2509.12040-red?style=flat-square)](https://arxiv.org/pdf/2509.12040.pdf) &nbsp;&nbsp;&nbsp;&nbsp;
 [![AAAI 2026](https://img.shields.io/badge/AAAI-2026-blue?style=flat-square)](https://ojs.aaai.org/index.php/AAAI/article/view/37521)
 
-[Open-sourced Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight](https://pan.baidu.com/s/1xX6TBLAn3Xypsq-IZI3azw?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC)
+[Open-sourced Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight](https://pan.baidu.com/s/1xX6TBLAn3Xypsq-IZI3azw?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets(huggingface)](https://huggingface.co/datasets/kkk2026/OVRSISBenchtest/tree/main) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC) 
 
 </div>
 
@@ -30,9 +30,10 @@ We sincerely apologize for any confusion caused by the earlier arXiv version and
 - [x] 2025/9/12: init repository.
 - [x] 2025/9/18: release the trained weight.
 - [x] 2026/6/30: move Pi-Seg to https://github.com/LiBingyu01/Pi-Seg, enjoy.
+- [x] 2026/10/22: submit the open-sourced dataset in huggingface. (already in Baidu Netdisk [OVSISBench](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) )
+
 ## 🚩 TO DO​
 
-- [ ] submit the open-sourced dataset in huggingface. (already in Baidu Netdisk [OVSISBench](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) )
 
 ## Introduction
 Open-Vocabulary Remote Sensing Image Segmentation (OVRSIS), an emerging task that adapts Open-Vocabulary Segmentation (OVS) to the remote sensing (RS) domain, remains underexplored due to the absence of a unified evaluation benchmark and the domain gap between natural and RS images.
