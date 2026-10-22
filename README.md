@@ -4,8 +4,7 @@
 **⭐Accepted to AAAI 2026 Oral⭐**
 
 [![Paper](https://img.shields.io/badge/ArXiv-2509.12040-red?style=flat-square)](https://arxiv.org/pdf/2509.12040.pdf) &nbsp;&nbsp;&nbsp;&nbsp;
-[![Paper](https://img.shields.io/badge/ArXiv-2509.12040-red?style=flat-square)](https://ojs.aaai.org/index.php/AAAI/article/view/37521) 
-
+[![AAAI 2026](https://img.shields.io/badge/AAAI-2026-blue?style=flat-square)](https://ojs.aaai.org/index.php/AAAI/article/view/37521)
 
 [Open-sourced Datasets](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight](https://pan.baidu.com/s/1xX6TBLAn3Xypsq-IZI3azw?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC) &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC)
 
