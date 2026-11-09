@@ -9,7 +9,7 @@
 [Open-sourced Datasets(baidu disk)](https://pan.baidu.com/s/1eXPwAbXRIecuy0-ZR6u0-Q?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC) &nbsp;&nbsp;&nbsp;&nbsp; [Open-sourced Datasets(huggingface)](https://huggingface.co/datasets/kkk2026/OVRSISBenchtest/tree/main)
 
 [Pretrained Weight(baidu disk)](https://pan.baidu.com/s/1xX6TBLAn3Xypsq-IZI3azw?pwd=USTC) &nbsp;&nbsp;&nbsp;&nbsp; 
- &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC) 
+ &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight(one drive)](https://1drv.ms/f/c/69a773fee5342110/EnsFZEJptAlHgHmyPUkdoksBN-SUP9JPdu-VC_ePsCLEtg?e=cEX1oC)  &nbsp;&nbsp;&nbsp;&nbsp; [Pretrained Weight(huggingface)](https://huggingface.co/kkk2026/RSKT-Seg_ckpt) 
 
 </div>
 
